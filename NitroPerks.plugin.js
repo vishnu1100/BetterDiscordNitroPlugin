@@ -1,8 +1,13 @@
 /**
  * @name NitroPerks
  * @website https://vishnusanthosh.info
+<<<<<<< HEAD
+ * @source https://github.com/vishnu1100/BetterDiscordNitroPlugin
+ * @updateUrl https://github.com/vishnu1100/BetterDiscordNitroPlugin
+=======
  * @source https://raw.githubusercontent.com/vishnu1100/BetterDiscordNitroPlugin/refs/heads/main/NitroPerks.plugin.js
  * @updateUrl https://raw.githubusercontent.com/vishnu1100/BetterDiscordNitroPlugin/refs/heads/main/NitroPerks.plugin.js
+>>>>>>> cdb6dbc66b1ee1b07783127aeb1eaba81d955291
  */
 /*@cc_on
 @if (@_jscript)
@@ -31,15 +36,24 @@ module.exports = (() => {
     const config = {
         "info": {
             "name": "NitroPerks",
+<<<<<<< HEAD
+            "authors": [
+=======
             "author": [
+>>>>>>> cdb6dbc66b1ee1b07783127aeb1eaba81d955291
                 {
                     "name": "Vishnu",
                     "discord_id": "946032826418098266",
                     "github_username": "vishnu1100"
                 }
             ],
+<<<<<<< HEAD
+            "version": "2.0.0",
+            "description": "Set clientsided animated avatar and profile banner, share your screen at max resolution / FPS available  and use cross-server and animated emojis everywhere!:<",
+=======
             "version": "1.3.9",
             "description": "Set clientsided animated avatar and profile banner, share your screen at max res and fps available and use cross-server and animated emojis everywhere!  :<",
+>>>>>>> cdb6dbc66b1ee1b07783127aeb1eaba81d955291
             "github": "https://github.com/vishnu1100/BetterDiscordNitroPlugin",
             "github_raw": "https://raw.githubusercontent.com/vishnu1100/BetterDiscordNitroPlugin/refs/heads/main/NitroPerks.plugin.js"
         },
@@ -117,7 +131,7 @@ module.exports = (() => {
                 getSettingsPanel() {
                     return Settings.SettingPanel.build(_ => this.saveAndUpdate(), ...[
                         new Settings.SettingGroup("Features").append(...[
-                            new Settings.Switch("High Quality Screensharing", "Enable or disable 1080p/source @ 60fps screensharing. This adapts to your current nitro status.", this.settings.screenSharing, value => this.settings.screenSharing = value)
+                            new Settings.Switch("High Quality Screensharing", "Enable or disable max resolution / FPS available for  screensharing. This adapts to your current nitro status.", this.settings.screenSharing, value => this.settings.screenSharing = value)
                         ]),
                         new Settings.SettingGroup("Emojis").append(
                             new Settings.Switch("Nitro Emojis Bypass", "Enable or disable using the Nitro Emoji bypass.", this.settings.emojiBypass, value => this.settings.emojiBypass = value),
