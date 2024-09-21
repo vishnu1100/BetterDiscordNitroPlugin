@@ -39,7 +39,7 @@ module.exports = (() => {
                 
                 }
             ],
-            "version": "1.3.9",
+            "version": "2.0.0",
             "description": "Set clientsided animated avatar and profile banner, share your screen at max fps and res and use cross-server and animated emojis everywhere!  :<",
             "github": "https://github.com/vishnu1100/BetterDiscordNitroPlugin",
             "github_raw": "https://raw.githubusercontent.com/vishnu1100/BetterDiscordNitroPlugin/refs/heads/main/NitroPerks.plugin.js"

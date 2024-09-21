@@ -6,7 +6,7 @@
 
 ## Features
 
-- **High-Quality Screen Sharing**: Share your screen at 1080p and 60 FPS, even without a Nitro subscription.
+- **High-Quality Screen Sharing**: Share your screen at max resolution and  FPS, even without a Nitro subscription.
 - **Animated Avatars and Banners**: Customize your profile with animated GIFs or high-quality images as profile avatars and banners, viewable client-side.
 - **Nitro Emoji Bypass**: Use animated and cross-server emojis without Nitro. Works across all servers and DMs.
 - **Custom Emoji Size**: Adjust the size of emojis anywhere between 16px and 64px for a more personalized emoji experience.
@@ -16,7 +16,7 @@
 
 1. **Download BetterDiscord**: You need to have BetterDiscord installed to use this plugin. You can get it from the official [BetterDiscord website](https://betterdiscord.app/).
 2. **Download NitroPerks Plugin**: 
-   - Get the plugin from the repository: [Download NitroPerks](https://github.com/JPabloNB/NitroPerks)
+   - Get the js  plugin from the repository: [Download NitroPerks](https://github.com/vishnu1100/BetterDiscordNitroPlugin/releases/tag/V2.0.0)
    - Save the file in the BetterDiscord `plugins` folder. 
 3. **Activate the Plugin**:
    - Open Discord and go to User Settings.
