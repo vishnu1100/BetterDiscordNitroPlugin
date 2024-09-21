@@ -23,6 +23,8 @@
    - Scroll down to the BetterDiscord section, and find the Plugins menu.
    - Activate the `NitroPerks` plugin from the list.
 
+   ***!!!!! Highly Recommended to use the Zeres plugin  before all installations  which allows plugins to use modern APIs in the current version of BetterDiscord ,  for better performance otherwise some functions may not work properly !!!!!(Available in favourites folder)***
+
 ## Usage
 
 Once the plugin is installed, you can enable and configure the features under the plugin settings:
