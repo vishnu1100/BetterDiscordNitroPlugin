@@ -1,13 +1,8 @@
 /**
- * @name NitroPerks
- * @website https://vishnusanthosh.info
-<<<<<<< HEAD
- * @source https://github.com/vishnu1100/BetterDiscordNitroPlugin
+ * @name FreeNitroPerks
+ * @website https://vishnusanthosh.info/
+ * @source https://github.com/vishnu1100/BetterDiscordNitroPlugin/blob/main/NitroPerks.plugin.js
  * @updateUrl https://github.com/vishnu1100/BetterDiscordNitroPlugin
-=======
- * @source https://raw.githubusercontent.com/vishnu1100/BetterDiscordNitroPlugin/refs/heads/main/NitroPerks.plugin.js
- * @updateUrl https://raw.githubusercontent.com/vishnu1100/BetterDiscordNitroPlugin/refs/heads/main/NitroPerks.plugin.js
->>>>>>> cdb6dbc66b1ee1b07783127aeb1eaba81d955291
  */
 /*@cc_on
 @if (@_jscript)
@@ -35,25 +30,16 @@
 module.exports = (() => {
     const config = {
         "info": {
-            "name": "NitroPerks",
-<<<<<<< HEAD
-            "authors": [
-=======
+            "name": "FreeNitroPerks",
             "author": [
->>>>>>> cdb6dbc66b1ee1b07783127aeb1eaba81d955291
                 {
                     "name": "Vishnu",
                     "discord_id": "946032826418098266",
                     "github_username": "vishnu1100"
                 }
             ],
-<<<<<<< HEAD
             "version": "2.0.0",
-            "description": "Set clientsided animated avatar and profile banner, share your screen at max resolution / FPS available  and use cross-server and animated emojis everywhere!:<",
-=======
-            "version": "1.3.9",
-            "description": "Set clientsided animated avatar and profile banner, share your screen at max res and fps available and use cross-server and animated emojis everywhere!  :<",
->>>>>>> cdb6dbc66b1ee1b07783127aeb1eaba81d955291
+            "description": "Set clientsided animated avatar and profile banner, share your screen at Max available resolution/FPS and use cross-server and animated emojis everywhere! :<",
             "github": "https://github.com/vishnu1100/BetterDiscordNitroPlugin",
             "github_raw": "https://raw.githubusercontent.com/vishnu1100/BetterDiscordNitroPlugin/refs/heads/main/NitroPerks.plugin.js"
         },
