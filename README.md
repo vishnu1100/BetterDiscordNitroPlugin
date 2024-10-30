@@ -25,6 +25,12 @@
 
    ***!!!!! Highly Recommended to use the Zeres plugin  before all installations  which allows plugins to use modern APIs in the current version of BetterDiscord ,  for better performance otherwise some functions may not work properly !!!!!(Available in favourites folder)***
 
+
+
+## 🎥 Video Tutorial
+
+For a step-by-step guide on installation and setup, watch this [video tutorial](https://youtu.be/HoBTcEQcIoA).
+
 ## Usage
 
 Once the plugin is installed, you can enable and configure the features under the plugin settings:
