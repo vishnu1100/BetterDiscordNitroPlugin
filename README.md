@@ -38,7 +38,7 @@ Once the plugin is installed, you can enable and configure the features under th
 - **Profile Customization**: Set custom profile avatars and banners using direct URLs (supports PNG, JPG, and GIF formats).
 - **Emoji Settings**: Customize the size of emojis and bypass Nitro restrictions to use animated and cross-server emojis.
 
-## Configuration Options
+## Configuration Option
 
 - **Screen Sharing**: Toggle between normal and Nitro-quality sharing for non-Nitro users.
 - **Emoji Size Slider**: Choose the desired size for emojis from a range of 16px to 64px.
