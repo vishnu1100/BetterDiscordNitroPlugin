@@ -1,0 +1,89 @@
+name: Auto Commit Bot
+
+on:
+  schedule:
+    - cron: '*/20 * * * *' # Runs every 20 minutes
+  workflow_dispatch:  # Allows manual execution of the workflow
+
+permissions:
+  contents: write
+
+jobs:
+  commit:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Step 1: Check out the repository with credentials persisted
+    - name: Checkout repository
+      uses: actions/checkout@v3
+      with:
+        persist-credentials: true
+
+    # Step 2: Modify the file
+    - name: Modify the file
+      run: echo "Commit made on $(date)" >> commit_file.txt
+
+    # Step 3: Configure Git
+    - name: Configure Git user
+      run: |
+        git config --global user.name "Vishnu1100"
+        git config --global user.email "vishnusanthoshvr@gmail.com"
+
+    # Step 4: Generate a random commit message
+    - name: Set random commit message
+      id: get-commit-message
+      run: |
+        MESSAGES=("Automated commit: It's time for another one!" \
+          "Just here to keep the repo warm 🛠️" \
+          "This commit is brought to you by caffeine ☕" \
+          "Committing changes like a ninja 🐱‍👤" \
+          "Did you hear about the commit that got away? Not this one!" \
+          "Who needs sleep? 🤖 Commit time!" \
+          "Auto-commit, because I can!" \
+          "Sneaking in another commit like 🐍" \
+          "A wild commit appeared!" \
+          "Guess what? Another commit!" \
+          "Hope this one doesn't break everything 🤞" \
+          "Oops, I did it again 🎵" \
+          "Adding more bugs... I mean features 🐛" \
+          "It's not a bug, it's an undocumented feature ✨" \
+          "Refactoring... or just moving stuff around 🤷" \
+          "Here’s another commit because why not? 🤪" \
+          "The cake is a lie, but this commit is real 🎂" \
+          "What does this button do? Oh, a commit!" \
+          "Too legit to git (push) ✊" \
+          "Commit and run... before anyone notices 🚀" \
+          "Just a little commit to brighten your day 🌞" \
+          "Keep calm and commit on 💾" \
+          "Git pushed like it's hot 🔥" \
+          "Added some magic ✨. Abracadabra!" \
+          "Code so good, even the rubber duck approves 🦆" \
+          "This commit message is sponsored by procrastination 🛋️" \
+          "One commit closer to quitting time 🕔" \
+          "Fixing bugs one commit at a time 🐞" \
+          "Adding commits like a boss 💼" \
+          "Testing in prod? YOLO 🌊" \
+          "I swear it worked on my machine 🤔" \
+          "Merge conflicts are just puzzles with attitude 🧩" \
+          "Dear future me, I’m sorry. 😅" \
+          "Every commit is a step towards MVP... kinda 🚶" \
+          "Proof that I’m doing work, I promise 📈" \
+          "No one asked for this, but here it is anyway 💁" \
+          "Git it together! ✨" \
+          "This code is held together by duct tape 🛠️" \
+          "Here comes another unnecessary commit 🐢" \
+          "Commit. Commit. Profit? 💰" \
+          "Running out of commit jokes... send help 🚨")
+
+        # Select a random message
+        RANDOM_INDEX=$((RANDOM % ${#MESSAGES[@]}))
+        echo "message=${MESSAGES[$RANDOM_INDEX]}" >> $GITHUB_ENV
+
+    # Step 5: Commit and push changes
+    - name: Commit and push changes
+      run: |
+        git add commit_file.txt
+        git commit -m "$message" || echo "No changes to commit"
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
